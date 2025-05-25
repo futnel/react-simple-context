@@ -1,0 +1,37 @@
+{
+  "name": "react-simple-context",
+  "version": "0.0.1",
+  "description": "A simple example context as a library.",
+  "main": "./dist/react-simple-context.umd.js",
+  "module": "./dist/react-simple-context.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "demo": "vite --port 3000"
+  },
+  "keywords": [
+    "react",
+    "context",
+    "example"
+  ],
+  "author": "futnel",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}
