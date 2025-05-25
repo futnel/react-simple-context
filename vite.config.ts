@@ -1,15 +1,11 @@
-import { resolve } from "path";
+import { resolve } from "path"
 
-import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
-import dts from "vite-plugin-dts";
-
+import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
+import dts from "vite-plugin-dts"
 
 export default defineConfig({
-  plugins: [
-    react(), 
-    dts({ include: ["lib"], exclude: ["src"] })
-  ],
+  plugins: [react(), dts({ include: ["lib"], exclude: ["src"] })],
   build: {
     lib: {
       entry: resolve(__dirname, "lib/index.ts"),
@@ -26,4 +22,4 @@ export default defineConfig({
       },
     },
   },
-});
+})

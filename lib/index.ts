@@ -1,1 +1,1 @@
-export { SimpleProvider, useSimpleContext } from "./SimpleContext";
+export { SimpleProvider, useSimpleContext } from "./SimpleContext"

@@ -10,7 +10,11 @@
   ],
   "scripts": {
     "build": "vite build",
-    "demo": "vite --port 3000"
+    "demo": "vite --port 3000",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "format": "prettier . --write",
+    "format-check": "prettier . --check"
   },
   "keywords": [
     "react",
@@ -24,9 +28,16 @@
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.5.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1",
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4"
   },

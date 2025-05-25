@@ -1,7 +1,8 @@
-import { SimpleProvider, useSimpleContext } from "../lib";
+import React from "react"
+import { SimpleProvider, useSimpleContext } from "../lib"
 
 function ChildComponent() {
-  const { value, setValue } = useSimpleContext();
+  const { value, setValue } = useSimpleContext()
   return (
     <div>
       <h2>Current value: {value}</h2>
@@ -11,7 +12,7 @@ function ChildComponent() {
         placeholder="Type something"
       />
     </div>
-  );
+  )
 }
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <ChildComponent />
       </SimpleProvider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
