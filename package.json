@@ -9,12 +9,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
-    "demo": "vite --port 3000",
+    "build": "tsc --p ./tsconfig.build.json && vite build",
+    "demo": "vite --port 3000 --open",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
-    "format": "prettier . --write",
-    "format-check": "prettier . --check"
+    "format": "prettier . --check",
+    "format-fix": "prettier . --write"
   },
   "keywords": [
     "react",
