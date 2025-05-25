@@ -1,6 +1,6 @@
-import React, { createContext, useContext, useState, ReactNode } from "react"
+import { createContext, useContext, useState, ReactNode } from "react"
 
-interface SimpleContextType {
+type SimpleContextType = {
   value: string
   setValue: (value: string) => void
 }
@@ -8,7 +8,7 @@ interface SimpleContextType {
 const SimpleContext = createContext<SimpleContextType>({
   value: "",
   setValue: () => {
-    /* */
+    /* no-op */
   },
 })
 

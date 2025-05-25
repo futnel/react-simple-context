@@ -1,4 +1,3 @@
-import React from "react"
 import { SimpleProvider, useSimpleContext } from "../lib"
 
 function ChildComponent() {
